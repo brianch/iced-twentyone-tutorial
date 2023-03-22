@@ -17,4 +17,4 @@ Now let's continue with the endgame scenarios and check the hand values after th
 
 Since we already have the view prepared, this was all we needed.
 
-![screenshot of the current gui](/img/15check_result_standing.jpg)
+![screenshot of the current gui](./img/15check_result_standing.jpg)

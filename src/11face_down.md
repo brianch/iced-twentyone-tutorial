@@ -181,4 +181,4 @@ fn view(&self) -> Element<Message, iced::Renderer<theme::TwentyOneTheme>> {
 }
 ```
 
-![screenshot of the current gui](/img/11face_down.jpg)
+![screenshot of the current gui](./img/11face_down.jpg)

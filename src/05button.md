@@ -71,4 +71,4 @@ If we receive a `DealCard` message, we try to deal another card, if we're sucess
 
 As an exercise, you may want to disable the button if there are no more cards left in the deck.
 
-![screenshot of the current gui](/img/05button.jpg)
+![screenshot of the current gui](./img/05button.jpg)

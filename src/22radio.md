@@ -105,4 +105,4 @@ impl radio::StyleSheet for TwentyOneTheme {
 }
 ```
 
-![screenshot of the current gui](/img/22radio.jpg)
+![screenshot of the current gui](./img/22radio.jpg)

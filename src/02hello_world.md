@@ -80,4 +80,4 @@ fn view(&self) -> Element<Message> {
 
 The `view` function is where we define the layout of the app, in this case we have a [`Text`](https://docs.rs/iced_native/latest/iced_native/widget/text/struct.Text.html) widget with `"Hello Iced"`, which we put inside a `container` widget and call `.into()` to convert it into an `Element` (in general you don't need to worry about this last part)
 
-![screenshot of the current gui](img/02hello_world.jpg)
+![screenshot of the current gui](./img/02hello_world.jpg)

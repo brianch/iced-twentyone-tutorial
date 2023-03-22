@@ -102,4 +102,4 @@ impl Application for IcedTwentyOne {
 #}
 ```
 
-![screenshot of the current gui](img/04a-card_as_text.jpg)
+![screenshot of the current gui](./img/04a-card_as_text.jpg)

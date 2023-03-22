@@ -22,4 +22,4 @@ We're using the `new()` function, but what if we wanted to change these things a
 
 Take a look at the documentation of [`iced::Window`](https://docs.rs/iced/latest/iced/window/) if you want to learn more.
 
-![screenshot of the current gui](/img/08window_modes.jpg)
+![screenshot of the current gui](./img/08window_modes.jpg)

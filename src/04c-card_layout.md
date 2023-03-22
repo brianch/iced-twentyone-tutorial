@@ -28,4 +28,4 @@ Considering that the *center* is centering the content that's *inside* the conta
 - `.width(Length::Fill)` The container will fill all the remaining horizontal space (in this case, of the window, since it's not inside anything).
 - `.height(Length::Fill)`The container will fill all the remaining vertical space.
 
-![screenshot of the current gui](/img/04c-card_layout.jpg)
+![screenshot of the current gui](./img/04c-card_layout.jpg)

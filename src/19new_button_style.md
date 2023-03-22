@@ -118,4 +118,4 @@ let col_menu = col![
 ].align_items(iced::Alignment::Center).spacing(10).width(Length::Fixed(120.));
 ```
 
-![screenshot of the current gui](/img/19new_button_style.jpg)
+![screenshot of the current gui](./img/19new_button_style.jpg)

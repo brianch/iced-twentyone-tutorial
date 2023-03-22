@@ -46,4 +46,4 @@ fn view(&self) -> Element<Self::Message> {
 ```
 Here we created the `Row` first, with `Row::new()` iterate over the cards in our hand and call `.push()` to add each one to the row. We then add the `Row` (instead of the `Image` directly as before) to the "player_col" `Column`.
 
-![screenshot of the current gui](/img/06row_push.jpg)
+![screenshot of the current gui](./img/06row_push.jpg)

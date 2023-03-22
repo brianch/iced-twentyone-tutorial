@@ -60,4 +60,4 @@ let table_col = col![
 ].align_items(iced::Alignment::Center).spacing(10);
 ```
 
-![screenshot of the current gui](/img/14check_result_dealing.jpg)
+![screenshot of the current gui](./img/14check_result_dealing.jpg)

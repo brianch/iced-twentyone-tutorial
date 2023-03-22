@@ -28,4 +28,4 @@ fn view(&self) -> Element<Self::Message> {
 }
 ```
 
-![screenshot of the current gui](/img/04b-card_as_image.jpg)
+![screenshot of the current gui](./img/04b-card_as_image.jpg)

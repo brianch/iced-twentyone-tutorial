@@ -82,4 +82,4 @@ While the game is at the "standing" stage we keep getting cards for the dealer (
 
 And that was all we needed.
 
-![screenshot of the current gui](/img/16subscription.jpg)
+![screenshot of the current gui](./img/16subscription.jpg)

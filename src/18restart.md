@@ -37,4 +37,4 @@ And to restart, we simply set our state to how it was in the beginning when we r
 }
 ```
 
-![screenshot of the current gui](/img/18restart.jpg)
+![screenshot of the current gui](./img/18restart.jpg)

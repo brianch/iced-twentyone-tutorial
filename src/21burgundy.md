@@ -44,4 +44,4 @@ Much easier to change color variants with them separated like this than having t
 
 You can switch in which variant you put the `#[default]` to check that both are working, in the next chapter we'll add an option to switch theme in-game.
 
-![screenshot of the current gui](/img/21burgundy.jpg)
+![screenshot of the current gui](./img/21burgundy.jpg)

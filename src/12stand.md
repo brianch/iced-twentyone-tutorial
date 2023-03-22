@@ -80,4 +80,4 @@ let dealer_info = container(
 ).height(Length::Fill).align_y(Vertical::Top);
 ```
 
-![screenshot of the current gui](/img/12stand.jpg)
+![screenshot of the current gui](./img/12stand.jpg)

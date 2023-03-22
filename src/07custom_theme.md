@@ -167,4 +167,4 @@ fn view(&self) -> Element<Message, iced::Renderer<theme::TwentyOneTheme>> {
 
 Don't worry about the `iced::Renderer` part, you don't need to deal with the renderer yourself, it's just that we needed to change the generic it uses.
 
-![screenshot of the current gui](/img/07custom_theme.jpg)
+![screenshot of the current gui](./img/07custom_theme.jpg)

@@ -40,4 +40,4 @@ Similar to what we did before, in our `player_info_col` definition, in our else 
 };
 ```
 
-![screenshot of the current gui](/img/13disable_button.jpg)
+![screenshot of the current gui](./img/13disable_button.jpg)

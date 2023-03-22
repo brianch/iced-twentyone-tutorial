@@ -55,5 +55,5 @@ And add the dealer's info to the *table_col* too, again, just like we did the pl
     ].align_items(iced::Alignment::Center).spacing(10);
 ```
 
-![screenshot of the current gui](/img/09dealer_hand.jpg)
+![screenshot of the current gui](./img/09dealer_hand.jpg)
 
