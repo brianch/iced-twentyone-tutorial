@@ -1,6 +1,6 @@
 # Creating a different button style
 
-Remember when we played with the button's StyleSheet at [Chapter 5](./styling.md)? We can try to play with this now.
+Remember when we played with the button's StyleSheet at [Chapter 5](./styling.md)? We can now do the same but on our own theme.
 
 On our theme.rs, let's add a ButtonStyle enum with 2 variants and set this as our Style type on the stylesheet:
 
@@ -111,7 +111,7 @@ impl application::StyleSheet for TwentyOneTheme {
 The "Table" styles are set as the default ones, so in our app code we just need to set the menu ones, let's go back to our col_menu and call `.style()` to specify which style we want:
 
 ```rust
-let col_menu = col![
+let menu_col = col![
     container(
         button(text("Restart")).on_press(Message::Restart).style(theme::ButtonStyle::Menu),
     ).height(Length::Fill).center_y().width(Length::Fill).center_x().style(theme::ContainerStyle::Menu)

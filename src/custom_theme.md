@@ -134,7 +134,7 @@ I know, I know, it's quite verbose, but on the bright side, it's not too hard to
 A few comments on the theme code:
 - Our TwentyOneTheme has a default (and currently, only) green variant, we will create more variants later.
 - A few widgets' `Appearance` struct don't impl `Default`, here for example we had to define every field of the `Rule`, even though we didn't care much about them. This will probably change in the future.
-- As we saw on chapter 5, the point of the `Style` Type inside each `StyleSheet` is that we may have a few different styles, e.g. if we had a *"TableStyle"* and a *"MenuStyle"* for the buttons, in our `view()` we could just pass the style we want with `.style(theme::ButtonStyle)`. [Later](./19new_button_style.md) we will try this!
+- As we saw on chapter 5, the point of the `Style` Type inside each `StyleSheet` is that we may have a few different styles, e.g. if we had a *"TableStyle"* and a *"MenuStyle"* for the buttons, in our `view()` we could just pass the style we want with `.style(theme::ButtonStyle)`. [Later](./new_button_style.md) we will try this!
 
 A few more tips about this:
 - Using an IDE is a big help, you can press `Ctrl+Space` on VS Code while creating each `Appearance` struct to see the fields available and play with them.
@@ -142,7 +142,7 @@ A few more tips about this:
 - Some stylesheet (like the `picklist` one) are more complicated and demand other elements, you can take a look at the default iced theme to check how it does things.
 <br><br>
 
-To use this Theme we need a couple changes to our `Application`, but first delete the custom button style we created before (and the `.style()` call), we will do everything on our custom theme from now on. The first change is that we obviously replace the `Theme` type with our own.
+To use this Theme we need a couple changes to our `Application`, but first delete the `theme()` method, we won't need it for now, and the custom button style we created before (and the `.style()` call), we will do everything on our custom theme from now on. The first change is that we obviously replace the `Theme` type with our own.
 
 ```rust
 mod theme;

@@ -7,3 +7,5 @@ I often enjoy those kind of tutorials where you create a simple project to learn
 Try it here: https://brianch.github.io/iced-twentyone-tutorial/
 
 ![Screenshot](src/img/final_screenshot.jpg)
+
+It has a couple minor problems in how the commits were done, but you can check the tutorial code step by step in this repo: https://github.com/brianch/iced-twentyone

@@ -71,7 +71,7 @@ On our `update()` we just need to set the state to the new value:
 }
 ```
 
-We also need to start using a custom `theme()` function in our application:
+We also need to start using a custom `theme()` function in our application again:
 ```rust
 fn theme(&self) -> Self::Theme {
     self.color_theme.unwrap()
