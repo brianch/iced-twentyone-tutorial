@@ -1,6 +1,6 @@
 # Hello World with the Application trait
 
-It's not needed yet for this app, but in real world programs, it will be a bit more common to implement the `Application` trait instead of `Sandbox`, so let's do it in this example already, there are very few differences needed:
+It's not needed yet for this app, but in real world programs, it will be a bit more common to implement the `Application` trait instead of `Sandbox`, so let's do it in this example already, there are very few differences:
 ```rust
 use iced::widget::{container, text};
 use iced::executor;

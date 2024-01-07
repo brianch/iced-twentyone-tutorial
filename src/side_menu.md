@@ -28,4 +28,4 @@ container(row_ui)
 
 we create a new `Column` (our sidebar) and add it and our "table_col" to a new `Row`.
 
-You may have noticed that I also switched the padding from the main `Container` to the `table_col`, since it was mainly in that area that we wanted to have some sort of margin. In [chapter 14](./19new_button_style.md) the padding on the main container would cause an issue, you may leave it there just to see what would happen.
+You may have noticed that I also switched the padding from the main `Container` to the `table_col`, since it was mainly in that area that we wanted to have some sort of margin. In [chapter 16](./new_button_style.md) the padding on the main container would cause an issue, you may leave it there just to see what would happen.

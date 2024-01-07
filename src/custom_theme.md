@@ -1,16 +1,13 @@
-# A custom Theme
+# A full custom Theme
 
-The visual is still a bit too generic, in most iced apps it will be a nice idea to implement a custom theme instead of using the default as we are right now, this might be a good chance to do it.
+What we saw so far was already quite useful, but if we want to have full flexibility in our app's appearance, we need to create our own custom theme, this is a bit complex, so don't feel discouraged if it take a while to understand things. The most cumbersome thing in this is that since we are creating a complete different theme, we will need to specify a stylesheet for every widget we use in our app (each one is just like the stylesheet we made for our button in the styling chapter).
 
-This will be a complex chapter, so don't feel discouraged if it take a while to understand things. It's honestly a bit cumbersome to implement, since we have to define a stylesheet for all the widgets we are using (even if we don't care that much about it). You could implement a custom stylesheet for a specific widget, but that isn't so intuitive either).
-
-Anyway, to keep everything consistent, we'll opt to make our own new theme, doing this will also be instructive to understand how the theming works.
 #### Important:
 Iced themes are used to change colors, borders and such things, but **not** layout related stuff (padding, spacing, alignment, etc.).
 
 ## How it works:
 
-For each iced widget, there's a different `StyleSheet` trait with rules about it's styling. Those traits return an `Appearance` struct (which is different for each widget). This is the trait signature of the [`iced::widget::button::StyleSheet`](https://docs.rs/iced/latest/iced/widget/button/trait.StyleSheet.html) for example:
+As we saw in [Chapter 5](./styling.md), for each iced widget, there's a different `StyleSheet` trait with rules about it's styling. Those traits return an `Appearance` struct (which is different for each widget). This is the trait signature of the [`iced::widget::button::StyleSheet`](https://docs.rs/iced/latest/iced/widget/button/trait.StyleSheet.html) as you may remember from that chapter:
 ```rust
 pub trait StyleSheet {
     type Style: Default;
@@ -125,7 +122,7 @@ impl rule::StyleSheet for TwentyOneTheme {
         rule::Appearance {
             color: Color::WHITE,
             width: 1,
-            radius: 0.0,
+            radius: 0.0.into(),
             fill_mode: rule::FillMode::Full,
         }
     }
@@ -145,7 +142,7 @@ A few more tips about this:
 - Some stylesheet (like the `picklist` one) are more complicated and demand other elements, you can take a look at the default iced theme to check how it does things.
 <br><br>
 
-To use this Theme we need a couple changes to our `Application`, we obviously replace the `Theme` type with our own.
+To use this Theme we need a couple changes to our `Application`, but first delete the custom button style we created before (and the `.style()` call), we will do everything on our custom theme from now on. The first change is that we obviously replace the `Theme` type with our own.
 
 ```rust
 mod theme;

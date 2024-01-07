@@ -12,7 +12,7 @@ struct IcedTwentyOne {
     player_hand: Hand,
 }
 ```
-Now it's good to start implementing the `Default` trait ourselves, in our `Default` state we start the deck, suffle the cards, and draw one to our hand.
+Notice that we aren't using the `#[derive(Default)]` anymore. We will start implementing the `Default` trait ourselves, in our `Default` state we start the deck, suffle the cards, and draw one to our hand.
 ```rust
 impl Default for IcedTwentyOne {
     fn default() -> IcedTwentyOne {

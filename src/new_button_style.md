@@ -1,6 +1,6 @@
 # Creating a different button style
 
-Remember when I mentioned the Style type inside each StyleSheet at [Chapter 5](./07custom_theme.md)? We can try to play with this now.
+Remember when I mentioned the Style type inside each StyleSheet at [Chapter 5](./custom_theme.md)? We can try to play with this now.
 
 On our theme.rs, let's add a ButtonStyle enum with 2 variants and set this as our Style type on the stylesheet:
 

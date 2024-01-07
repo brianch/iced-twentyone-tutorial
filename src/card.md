@@ -4,8 +4,8 @@ To don't lose time with non-iced stuff, I'll post here the data structures for t
 
 ```sh
 [dependencies]
-iced = "0.8.0"
-rand = "0.8.4"
+iced = "0.10.0"
+rand = "0.8.5"
 ```
 
 And this is our card related code, save it as card.rs:

@@ -8,7 +8,7 @@ $ cargo new iced-twentyone
 Enter in this directory and, in your Cargo.toml, add the iced dependency:
 ```sh
 [dependencies]
-iced = "0.8.0"
+iced = "0.10.0"
 ```
 This is the code for a minimal Hello World example, write it in your src/main.rs:
 

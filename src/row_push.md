@@ -15,8 +15,9 @@ fn view(&self) -> Element<Self::Message> {
     ].align_items(iced::Alignment::Center).spacing(10);
 ```
 The `.size(35)` is what you would expect, it changes the size of the text.
+You can run the app now, you'll see that the value is displayed.
 
-We want a hand with multiple cards, as we will need in the actual game, so let's stop removing the previous card, just delete the pop() line we had on our update function:
+But we want a hand with multiple cards, as we will need in the actual game, so let's stop removing the previous card, just delete the pop() line we had on our update function:
 
 ```rust
 fn update(&mut self, message: Self::Message) -> Command<Self::Message> {
