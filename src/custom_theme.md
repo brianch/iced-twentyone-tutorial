@@ -132,9 +132,9 @@ impl rule::StyleSheet for TwentyOneTheme {
 I know, I know, it's quite verbose, but on the bright side, it's not too hard to understand and you generally can copy the default Theme stylesheets [from iced](https://github.com/iced-rs/iced/blob/master/style/src/theme.rs) or examples like this one and just change the values you are interested in.
 
 A few comments on the theme code:
-- Our BlackjackTheme has a default (and currently, only) green variant, we will create more variants later.
+- Our TwentyOneTheme has a default (and currently, only) green variant, we will create more variants later.
 - A few widgets' `Appearance` struct don't impl `Default`, here for example we had to define every field of the `Rule`, even though we didn't care much about them. This will probably change in the future.
-- The point of the `Style` Type inside each `StyleSheet` is that we may have a few different styles, e.g. if we had a *"TableStyle"* and a *"MenuStyle"* for the buttons, in our `view()` we could just pass the style we want with `.style(theme::ButtonStyle)`. [Later](./19new_button_style.md) we will try this!
+- As we saw on chapter 5, the point of the `Style` Type inside each `StyleSheet` is that we may have a few different styles, e.g. if we had a *"TableStyle"* and a *"MenuStyle"* for the buttons, in our `view()` we could just pass the style we want with `.style(theme::ButtonStyle)`. [Later](./19new_button_style.md) we will try this!
 
 A few more tips about this:
 - Using an IDE is a big help, you can press `Ctrl+Space` on VS Code while creating each `Appearance` struct to see the fields available and play with them.
