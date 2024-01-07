@@ -92,7 +92,7 @@ fn update(&mut self, message: Self::Message) -> Command<Self::Message> {
 But this message has to come from somewhere, so along with changing the card's image and the hand's value, we need to have a button to start the game. These are a lot of changes, so we'll need to separate our `column!` macro call in two.
 
 
-We'll create the `Column` in a variable, with an `if` to check which version we want:
+We'll create the `Column` in a variable, with an `if` to check which version we want, replace the `player_row` and the for below it to this:
 
 ```rust
 let player_info_col = if self.game_stage == GameStage::Init {

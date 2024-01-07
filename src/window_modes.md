@@ -14,7 +14,7 @@ Talking about `iced::window`, we can take a look at how to to make the program f
 
 ```rust
 fn new(_flags: ()) -> (IcedTwentyOne, Command<Self::Message>) {
-    (IcedBlackjack::default(), iced::window::change_mode(iced::window::Mode::Fullscreen))
+    (IcedTwentyOne::default(), iced::window::change_mode(iced::window::Mode::Fullscreen))
 }
 ```
 

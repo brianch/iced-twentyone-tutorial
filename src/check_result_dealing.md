@@ -48,9 +48,14 @@ fn view(&self) -> Element<Message, iced::Renderer<theme::TwentyOneTheme>> {
         } else if self.game_stage == GameStage::Tie {
             game_result = text("It's a tie!!").size(50);
         }
+#        for card in &self.dealer_hand.cards {
+#            dealer_row = dealer_row.push(image(String::from("img/") + &card.get_id() + ".png").height(Length::Fixed(200.)));
+#        }
+#        dealer_hand_val = self.dealer_hand.value().to_string();
+#    };
 ```
 
-With the `Text` ready, we can jsut add it to our table_col:
+With the `Text` ready, we can just add it to our table_col:
 
 ```rust
 let table_col = col![

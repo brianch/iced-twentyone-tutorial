@@ -34,8 +34,8 @@ let menu_col = col![
             button(text("Restart")).on_press(Message::Restart).style(theme::ButtonStyle::Menu),
             Space::with_height(Length::Fixed(30.)),
             text("Theme"),
-            Radio::new(theme::TwentyOneTheme::Green, "Green", self.color_theme, Message::ChangeTheme),
-            Radio::new(theme::TwentyOneTheme::Burgundy, "Burgundy", self.color_theme, Message::ChangeTheme),
+            Radio::new("Green", theme::TwentyOneTheme::Green, self.color_theme, Message::ChangeTheme),
+            Radio::new("Burgundy", theme::TwentyOneTheme::Burgundy, self.color_theme, Message::ChangeTheme),
         ].spacing(10),
     ).height(Length::Fill).center_y().width(Length::Fill).center_x().style(theme::ContainerStyle::Menu)
 ].align_items(iced::Alignment::Center).spacing(10).width(Length::Fixed(200.));

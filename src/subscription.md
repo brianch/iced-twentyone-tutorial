@@ -8,7 +8,7 @@ A `Subscription` is used when you need to listen (without blocking the GUI) to e
 
 Here our use case is super simple, we will have a Subscription that produces a message at a set interval and will deal a new card to the dealer each time until they no longer need more. `iced_futures` has a [`every()`](https://docs.rs/iced_futures/latest/iced_futures/backend/native/smol/time/fn.every.html) function that does just that.
 
-For more normal use cases, you would probably want to use the [`subscription::unfold()`](https://docs.iced.rs/iced/subscription/fn.unfold.html) function that will run your code (which should be an async `Stream`). It's a complicated thing if you're not familiar with `async` code, but on iced's discord you can find a bunch of discussions about this, which might help you.
+For more normal use cases, you would probably want to use the [`subscription::channel()`](https://docs.rs/iced/0.10.0/iced/subscription/fn.channel.html) function that will run your code (which should be an async `Stream`). It's a complicated thing if you're not familiar with `async` code, but on iced's [discord](https://discord.gg/3xZJ65GAhd) and [discourse](https://discourse.iced.rs/) you can find a bunch of discussions about this and also get help in case you need.
 
 -----------
 But let's prepare the game logic first, we need to define the `Message` the subscription will return to us when it's time to deal another card to the dealer, don't worry about the argument it receives, the `every()` function returns the time that has passed in case we need, but we don't care about it in this case:
@@ -52,10 +52,10 @@ We're also processing the `DealerDraw(_)` message on our `update()`, no mysterie
 
 ```
 
-For `async` stuff Iced has three backends, `tokio`, `async-std`, and `smol`. To use the `every()` function I mentioned before, we need to choose one of these using the feature of the same name. It doesn't really matter much which one, let's go wtih smol, add it to your Cargo.toml:
+For `async` stuff Iced has three backends, `tokio`, `async-std`, and `smol`. To use the `every()` function I mentioned before, we need to choose one of these using the feature of the same name. It doesn't really matter much which one, let's go with tokio here, add it to your Cargo.toml:
 
 ```sh
-iced = {version = "0.8.0", features = ["image", "smol"] }
+iced = {version = "0.10.0", features = ["image", "tokio"] }
 ```
 
 Add these new imports to our main.rs:
@@ -66,7 +66,7 @@ use std::time::{Duration, Instant};
 use iced::time;
 ```
 
-This will be our `Subscription` function, place it under the `view()`:
+This will be our `Subscription` function (it's an optional method of the application trait), place it under the `view()`:
 
 ```rust
 fn subscription(&self) -> Subscription<Message> {
